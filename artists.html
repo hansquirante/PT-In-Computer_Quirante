@@ -1,0 +1,132 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #ff00ff;
+ color: purple; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #ff00ff; 
+ color: purple;
+ border-radius: 0px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 0px;
+    Background-color: black;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 0px;
+    Background-color: black;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 0px;
+    background-color: black;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 0px;
+    background-color: black;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 0px;
+    background-color: black;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT1-4_QUIRANTE</title>
+  </head>
+   <body> 
+<font color=#ff00ff face=valorant>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=home.html>Home</a></li>
+           <li align=center><a style="font-weight:bold" href=aboutme.html>About Me</a></li> 
+           <li align=center><a style="font-weight:bold" href=albums.html>Favorite Albums</a></li>
+           <li align=center><a style="font-weight:bold" href=music.html>Favorite Music</a></li> 
+           <li align=center><a style="font-weight:bold" href=artists.html>Favorite Songs</a></li>  		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Kanye West </h2>
+<h1> Ye, commonly known as Kanye West, is an American rapper, record producer, entrepreneur, and fashion designer.  </h1>
+</div>
+<div align="center" class="content-2">
+<h2> Drake </h2>
+<h1> Aubrey Drake Graham is a Canadian rapper, singer, songwriter, and actor. Gaining recognition by starring as Jimmy Brooks in the CTV teen drama series Degrassi. </h1>
+</div>
+<div align="center" class="content-3">
+<h2> Pop Smoke </h2>
+<h1> Bashar Barakah Jackson, known professionally as Pop Smoke, was an American rapper, singer, and songwriter. He was considered by many to be the face of Brooklyn drill. </h1>
+</div>
+<div align="center" class="footer">
+<h2> Travis Scott </h2>
+<h1> Jacques Bermon Webster II, better known by his stage name Travis Scott, is an American rapper, singer, songwriter, and record producer. His stage name is the namesake of a favorite uncle combined with the first name of one of his inspirations, Kid Cudi.  </h1>
+</div>
+</div>
+</body> 
+</html>
