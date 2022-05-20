@@ -1,0 +1,132 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: #ff00ff;
+ color: purple; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: #ff00ff; 
+ color: purple;
+ border-radius: 0px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 0px;
+    Background-color: black;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 0px;
+    Background-color: black;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 0px;
+    background-color: black;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 0px;
+    background-color: black;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 0px;
+    background-color: black;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT1-4_QUIRANTE</title>
+  </head>
+   <body> 
+<font color=#ff00ff face=valorant>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>Home</a></li>
+           <li align=center><a style="font-weight:bold" href=aboutme.html>About Me</a></li> 	
+           <li align=center><a style="font-weight:bold" href=music.html>Favorite Music</a></li>
+           <li align=center><a style="font-weight:bold" href=songs.html>Favorite Songs</a></li> 
+           <li align=center><a style="font-weight:bold" href=artists.html>Favorite Artists</a></li>  		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Graduation </h2>
+<h1> Graduation is the third studio album by American rapper and producer Kanye West,<br> released on September 11, 2007, through Def Jam Recordings and Roc-A-Fella Records.<br> Recording sessions took place between 2005 and 2007<br> at several studios in New York and Los Angeles.</h1>
+</div>
+<div align="center" class="content-2">
+<h2> We Love You Tecca 2 </h2>
+<h1> We Love You Tecca 2 is the second studio album by<br> American rapper Lil Tecca. It was released through Galactic and Republic Records on August 27, 2021,<br> one day after his 19th birthday. The album contains guest appearances from Gunna, Iann Dior, Chief Keef, Trippie Redd, Nav, and Lil Yachty. </h1>
+</div>
+<div align="center" class="content-3">
+<h2> 2 Alive </h2>
+<h1> 2 Alive is the second studio album by American rapper<br> Yeat. It was released on February 18, 2022, by Geffen Records, Field Trip Records and Twizzy Rich.<br> Serving as Yeat’s major label debut, the album features guest appearances from<br> Young Thug, Gunna, Yung Kayo, Ken Carson, and SeptembersRich. </h1>
+</div>
+<div align="center" class="footer">
+<h2> Shoot for the Stars, Aim for the Moon </h2>
+<h1> Shoot for the Stars, Aim for the Moon is the debut studio album by American rapper Pop Smoke.<br> It was posthumously released on July 3, 2020, by Victor Victor Worldwide and Republic Records,<br> and a deluxe edition of the album that includes fifteen additional tracks—including<br> remixes of three songs from the original—was released on July 20 that year,<br> a date that would have been Pop Smoke's 21st birthday. </h1>
+</div>
+</div>
+</body> 
+</html>
